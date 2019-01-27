@@ -21,7 +21,8 @@ RUN apk update \
  && addgroup -g 98  docker \
  && mkdir /home/docker \
  && adduser -D -u 99 -G docker docker \
- && chown docker:docker /home/docker
+ && chown docker:docker /home/docker \
+ && chmod 777 /app/*.sh
 
 VOLUME /home/docker
 
