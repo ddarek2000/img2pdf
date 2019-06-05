@@ -29,5 +29,5 @@ VOLUME /home/docker
 USER docker
 WORKDIR /home/docker
 
-CMD ["apk info"]
+CMD ["/sbin/apk info"]
 ENTRYPOINT ["/app/docker-wrapper.sh"]
