@@ -15,6 +15,7 @@ RUN apk update \
         && apk add --no-cache ocrmypdf \
         && apk add --no-cache unpaper \
         && apk add --no-cache tesseract-ocr \
+        && apk add --no-cache py3-pdfminer \
 #       && apk add --no-cache tesseract-ocr-data-spa \
         && rm -rf /var/cache/apk/* \
         && python3 -m venv --system-site-packages /appenv \
